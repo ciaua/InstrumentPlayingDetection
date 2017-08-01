@@ -18,7 +18,14 @@ The difficulty is in the lack of training data with detailed locations of action
 
 `python setup.py install`
 
+## Test data (Sound)
+http://mac.citi.sinica.edu.tw/~liu/data/InstrumentPlayingDetection/MedleyDB.zip
+
+This file includes the features and annotations converted from the original timestamps for the evaluation in this work. The original files are from http://medleydb.weebly.com/
+
+
 ## Pretrained models
+load into a python dict with `torch.load`
 
 ### Sound model
 FCN trained with AudioSet
@@ -37,11 +44,12 @@ http://mac.citi.sinica.edu.tw/~liu/data/InstrumentPlayingDetection/models/object
 FCN trained with YouTube8M
 
 Download:
+
 Video tag as target (VT)
 http://mac.citi.sinica.edu.tw/~liu/data/InstrumentPlayingDetection/models/action/params.VT.torch
 
-Sound*Object as target
-http://mac.citi.sinica.edu.tw/~liu/data/InstrumentPlayingDetection/models/action/params.SOT.torch
+Sound*Object as target:
+http://mac.citi.sinica.edu.tw/~liu/data/InstrumentPlayingDetection/models/action/params.SOT0503.torch
 
 ## Usage
 

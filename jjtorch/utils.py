@@ -4,6 +4,7 @@ import time
 import os
 import sys
 import csv
+import json
 import numpy as np
 import torch
 from PIL import Image
@@ -69,6 +70,12 @@ def read_csv(file_path):
         csv_reader = csv.reader(opdrf)
         data = [term for term in csv_reader]
         return data
+
+
+def read_json(file_path):
+    with open(file_path) as of:
+        data = json.load(of)
+    return data
 
 
 # Get current time
