@@ -55,7 +55,7 @@ Download:
 Video tag as target (VT):  
 http://mac.citi.sinica.edu.tw/~liu/data/InstrumentPlayingDetection/models/action/params.VT.torch
 
-Sound*Object as target:
+Sound*Object as target (SOT0503):
 http://mac.citi.sinica.edu.tw/~liu/data/InstrumentPlayingDetection/models/action/params.SOT0503.torch
 
 ## Scripts
