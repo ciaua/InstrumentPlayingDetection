@@ -18,7 +18,14 @@ The difficulty is in the lack of training data with detailed locations of action
 
 `python setup.py install`
 
-## Test data (Sound)
+## Test data 
+
+### Action
+We manaully annotated the playing actions from clips of 135 videos (15 for each instrument). Totally 5400 frames are annotated.
+
+`data/action_annotations/`
+
+### Sound
 http://mac.citi.sinica.edu.tw/~liu/data/InstrumentPlayingDetection/MedleyDB.zip
 
 This file includes the features and annotations converted from the original timestamps for the evaluation in this work. The original files are from http://medleydb.weebly.com/
@@ -45,24 +52,21 @@ FCN trained with YouTube8M
 
 Download:
 
-Video tag as target (VT)
+Video tag as target (VT):  
 http://mac.citi.sinica.edu.tw/~liu/data/InstrumentPlayingDetection/models/action/params.VT.torch
 
 Sound*Object as target:
 http://mac.citi.sinica.edu.tw/~liu/data/InstrumentPlayingDetection/models/action/params.SOT0503.torch
 
-## Usage
+## Scripts
 
-### Use the sound model
-
-
-### Use the object model
+### Evaluate the sound model
+`scripts/AudioSet/test.FCN.merged_tags.multilogmelspec.py`
 
 
-### Use the action model
-
- 
-
-
-
+### Evaluate the action model
+`scripts/YouTube8M/compute_predictions.fragment.dense_optical_flow.no_resize.py`
+`scripts/YouTube8M/extract_image.fragment.no_padding.py`
+`scripts/YouTube8M/test.action.temporal.py`
+`scripts/YouTube8M/test.action.spatial.py`
 
