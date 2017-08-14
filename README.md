@@ -10,7 +10,7 @@ The difficulty is in the lack of training data with detailed locations of action
 
 ### Proposed framework
 <p align="center">
-    <img src="doc/img/model_v4.png", width="750">
+    <img src="doc/img/framework_SOT_v2.png", width="750">
 </p>
 
 
