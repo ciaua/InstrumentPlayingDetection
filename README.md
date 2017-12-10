@@ -13,12 +13,24 @@ The difficulty is in the lack of training data with detailed locations of action
     <img src="doc/img/framework_SOT_v2.png", width="750">
 </p>
 
+## Examples of our result
+
+| Instrument |       |
+| ---------- | ----- |
+| Flute      | ![](doc/img/heat_maps/d3J_aYbTaEE__Flute.gif) |
+| Violin     | ![](doc/img/heat_maps/d3J_aYbTaEE__Violin.gif) |
+| Piano      | ![](doc/img/heat_maps/BAieBB1yhfw__Piano.gif) |
+| Saxophone  | ![](doc/img/heat_maps/_mpZqTZxJrU__Saxophone.gif)|
+
+## Some sample videos of our result
+http://mac.citi.sinica.edu.tw/~liu/videos_instrument_playing_detection_web.zip
+
 
 ## Installation
 
 `python setup.py install`
 
-## Test data 
+## Test data
 
 ### Action
 We manaully annotated the playing actions from clips of 135 videos (15 for each instrument). Totally 5400 frames are annotated.
@@ -52,7 +64,7 @@ FCN trained with YouTube8M
 
 Download:
 
-Video tag as target (VT):  
+Video tag as target (VT):
 http://mac.citi.sinica.edu.tw/~liu/data/InstrumentPlayingDetection/models/action/params.VT.torch
 
 Sound*Object as target (SOT0503):
@@ -69,4 +81,3 @@ http://mac.citi.sinica.edu.tw/~liu/data/InstrumentPlayingDetection/models/action
 `scripts/YouTube8M/extract_image.fragment.no_padding.py`
 `scripts/YouTube8M/test.action.temporal.py`
 `scripts/YouTube8M/test.action.spatial.py`
-
