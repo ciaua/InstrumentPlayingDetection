@@ -22,6 +22,16 @@ The difficulty is in the lack of training data with detailed locations of action
 | Piano      | ![](doc/img/heat_maps/BAieBB1yhfw__Piano.gif) |
 | Saxophone  | ![](doc/img/heat_maps/_mpZqTZxJrU__Saxophone.gif)|
 
+
+## Comparing models trained with different types of targets
+
+| Instrument |       |
+| ---------- | ----- |
+| Violin     | ![](doc/img/heat_maps/compare_2G2VaBX24So__Violin.gif) |
+| Cello      | ![](doc/img/heat_maps/compare_2G2VaBX24So__Cello.gif) |
+| Flute      | ![](doc/img/heat_maps/compare_55_RhFOyRgk__Flute.gif)|
+
+
 ## Some sample videos of our result
 http://mac.citi.sinica.edu.tw/~liu/videos_instrument_playing_detection_web.zip
 
