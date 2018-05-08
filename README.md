@@ -5,7 +5,7 @@ This repository contains the code and data used in the following paper:
 
 **_Weakly-supervised Visual Instrument-playing Action Detection in Videos_** authored by **Jen-Yu Liu, Yi-Hsuan Yang, and Shyh-Kang Jeng**
 
-It was submitted to a journal and is currently under review. The preprint version can be found here: [Preprint](https://github.com/ciaua/InstrumentPlayingDetection/raw/master/files/preprint.pdf)
+It was submitted to a journal and is currently under review. The preprint version can be found here: [arXiv](https://arxiv.org/abs/1805.02031)
 
 
 ## Introduction
