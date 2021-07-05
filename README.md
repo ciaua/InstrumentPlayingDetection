@@ -100,6 +100,7 @@ http://mac.citi.sinica.edu.tw/~liu/data/InstrumentPlayingDetection/models/action
 
 ### Evaluate with a sample video
 ```
+wget -P pretrained_models http://mac.citi.sinica.edu.tw/~liu/data/InstrumentPlayingDetection/models/action/params.SOT0503.torch
 cd scripts
 python download_videos.py
 python compute_predictions_for_sample_videos.fragment.dense_optical_flow.no_resize.py

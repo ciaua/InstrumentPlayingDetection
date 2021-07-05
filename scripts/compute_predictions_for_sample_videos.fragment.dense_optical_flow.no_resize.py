@@ -3,7 +3,7 @@ import cv2
 import numpy as np
 import sys
 
-sys.path.append('../../')
+sys.path.append('..')
 
 from jjtorch import utils
 from jjtorch.layers import SpatialCrossMapLRN as LRN
