@@ -100,6 +100,7 @@ http://mac.citi.sinica.edu.tw/~liu/data/InstrumentPlayingDetection/models/action
 
 ### Evaluate with a sample video
 ```
-scripts/misc/download_videos.py
-scripts/compute_predictions_for_sample_videos.fragment.dense_optical_flow.no_resize.py
+cd scripts/misc/
+python download_videos.py
+python compute_predictions_for_sample_videos.fragment.dense_optical_flow.no_resize.py
 ```

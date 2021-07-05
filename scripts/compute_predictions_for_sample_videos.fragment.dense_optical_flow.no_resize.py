@@ -228,14 +228,14 @@ if __name__ == '__main__':
 
     # Dirs and fps
     # base_data_dir = "/home/ciaua/NAS/home/data/TMM17_instrument_playing/YT8M/"
-    base_data_dir = "../../out/"
+    base_data_dir = "../out/"
 
     # Path to the video folder
     # video_dir = '/home/ciaua/NAS/Database2/YouTube8M/video'
-    video_dir = '../../sample_videos/'
+    video_dir = '../sample_videos/'
 
     # Download action model and set the path below
-    param_fp = '../../pretrained_models/params.SOT0503.torch'
+    param_fp = '../pretrained_models/params.SOT0503.torch'
 
     # IDs
     id_list = ['d3J_aYbTaEE']

@@ -44,9 +44,8 @@ def download(youtube_id, out_dir):
 
 
 if __name__ == '__main__':
-    out_dir = '../../sample_videos/'
-    if not os.path.exists(out_dir):
-        os.makedirs(out_dir)
+    out_dir = '../sample_videos/'
+    os.makedirs(out_dir, exist_ok=True)
 
     ids = [
         'd3J_aYbTaEE',
