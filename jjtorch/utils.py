@@ -123,9 +123,11 @@ def check_best_value(best_value, current_value, higher_better):
             lowest the best. It's for measuring loss.
     '''
     if higher_better:
-        def comp_func(x, y): return x >= y
+        def comp_func(x, y):
+            return x >= y
     else:
-        def comp_func(x, y): return x <= y
+        def comp_func(x, y):
+            return x <= y
 
     if comp_func(current_value, best_value):
         best_value = current_value
@@ -343,13 +345,15 @@ def save_params(fp, network, optimizer):
 
 
 def load_params(fp, device_id, all_ids=[0, 1, 2, 3, 'cpu']):
-    if device_id is 'cpu':
+    if device_id == 'cpu':
         params = torch.load(
             fp,
+            encoding='latin1',
             map_location=lambda storage, loc: storage)
     else:
         params = torch.load(
             fp,
+            encoding='latin1',
             map_location={
                 'cuda:{}'.format(gid): 'cuda:{}'.format(device_id)
                 for gid in all_ids})

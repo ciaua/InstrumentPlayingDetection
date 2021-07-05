@@ -7,6 +7,7 @@ sys.path.append('../../')
 
 from jjtorch import utils
 from jjtorch.layers import SpatialCrossMapLRN as LRN
+# from torch.nn import CrossMapLRN3d as LRN
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
@@ -227,7 +228,7 @@ if __name__ == '__main__':
 
     # Dirs and fps
     # base_data_dir = "/home/ciaua/NAS/home/data/TMM17_instrument_playing/YT8M/"
-    base_data_dir = "../out/"
+    base_data_dir = "../../out/"
 
     # Path to the video folder
     # video_dir = '/home/ciaua/NAS/Database2/YouTube8M/video'
@@ -236,14 +237,8 @@ if __name__ == '__main__':
     # Download action model and set the path below
     param_fp = '../../pretrained_models/params.SOT0503.torch'
 
-    id_dict_fp = '../../data/video_id.te.json'
-
-    # ID dict
-    id_dict = utils.read_json(id_dict_fp)
-
-    id_list = list()
-    for inst in id_dict:
-        id_list += id_dict[inst]
+    # IDs
+    id_list = ['d3J_aYbTaEE']
 
     # Output
     base_out_dir = os.path.join(
@@ -303,5 +298,3 @@ if __name__ == '__main__':
             pred_o = np.concatenate(pred_list_o, axis=0)
 
             np.save(out_fp, pred_o)
-
-            # pred_o.shape=(num_frames, num_classes, height, width)
